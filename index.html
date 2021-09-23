@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contas</title>
+
+</head>
+
+<link rel="stylesheet" type="text/css" href="Styles.css">
+
+<body>
+  <div class="Box">
+    <form method="POST" action=""
+      oninput="Ed.value=((parseFloat(Condominio.value) + parseFloat(Energia.value) + parseFloat(IPTU.value) + 30 - parseFloat(Desconto.value))/3)+(parseFloat(Aluguel.value) * 0.3884), mk.value=((parseFloat(Condominio.value) + parseFloat(Energia.value) + parseFloat(IPTU.value) + 30 - parseFloat(Desconto.value))/3)+(parseFloat(Aluguel.value) * 0.3058)">
+      <fieldset>
+        <legend>
+          <h2><b>Contas</b></h2>
+        </legend>
+        <div class="inputBox">
+          <input type="number" name="Aluguel" id="inputAluguel" class="inputData" required>
+          <label for="Aluguel"><b>Aluguel</b></label>
+        </div>
+        <br>
+        <div class="inputBox">
+          <input type="number" name="Condominio" id="inputCondominio" class="inputData" required>
+          <label for="Condomio"><b>Condominio</b></label>
+        </div>
+        <br>
+        <div class="inputBox">
+          <input type="number" name="Energia" id="inputEnergia" class="inputData" required>
+          <label for="Energia"><b>Energia</b></label>
+        </div>
+        <br>
+        <div class="inputBox">
+          <input type="number" name="Desconto" id="inputDesconto" class="inputData">
+          <label for="Desconto"><b>Desconto</b></label>
+        </div>
+        <br>
+        <div class="inputBox">
+          <input type="number" name="IPTU" id="inputIPTU" class="inputData">
+          <label for="IPTU"><b>IPTU</b></label>
+        </div>
+        <br>
+        <br>
+        <div class="Result1">
+          <output name="Ed"></output><br>
+          <label for="Ed"><b>Ed</b></label>
+        </div>
+        <p>
+        <div class="Result2">
+          <output name="mk"></output><br>
+          <label for="mk"><b>Chele & Kel</b></label>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>
