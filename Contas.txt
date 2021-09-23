@@ -1,3 +1,0 @@
-Repositorio Contas de casa em HTML, posteriormente vem em C++ tbm.
-Fiquem a vontade pra modificar, usar, etc.
-
